@@ -28,3 +28,12 @@ into receiving event loop signals, not sure. Next, we could look at the examples
 [bgfx](https://github.com/bkaradzic/bgfx/tree/master/examples)) and get a demo working, then
 we should look into following the "shaders for beginners" guide, along with rust crates for
 compiling shader scripts, and finally plugging those into bgfx-rs.
+
+The most difficult thing might be shaders. I looked a bit at how bgfx handles shaders, and
+they use a tool called Shader Compiler (shaderc, also has a rust crate). The bgfx docs
+mention "predefined uniforms" with helper macros, and using makefiles, so I'm not entirely
+certain how this will be done.
+
+I need to read up about the terminology used, "uniforms", "vertex shader attributes".
+The first thing to tackle is getting a basic cubes example work, where I handle compiling
+the shader myself, so I can explore adding other features next.
