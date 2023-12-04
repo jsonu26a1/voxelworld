@@ -20,3 +20,11 @@ Here are the new resources I'll be using now that I'm using bgfx-rs.
 - ["3D World Generation" by SimonDev on YouTube](https://www.youtube.com/playlist?list=PLRL3Z3lpLmH3PNGZuDNf2WXnLTHpN9hXy)
 - ["3D Game Shaders For Beginners" on GitHub](https://github.com/lettier/3d-game-shaders-for-beginners)
 
+# TODO list
+The hello_winit has basically no 3D boilerplate. Our first step should be to figure out what
+state we need to pass onto a new module where our "game" will live. It might also be tied
+into receiving event loop signals, not sure. Next, we could look at the examples (see
+[bgfx-rs](https://github.com/emoon/bgfx-rs/tree/main/examples) and
+[bgfx](https://github.com/bkaradzic/bgfx/tree/master/examples)) and get a demo working, then
+we should look into following the "shaders for beginners" guide, along with rust crates for
+compiling shader scripts, and finally plugging those into bgfx-rs.
